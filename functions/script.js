@@ -6,4 +6,15 @@ const stringLength = (str) => {
 
 const reverseString = (str) => str.split('').reverse().join('');
 
-module.exports = { stringLength, reverseString };
+
+class Calculator {
+  static sum = (num1, num2) => (num1 * 10 + num2 * 10) / 10;
+
+  static difference = (num1, num2) => (num1 * 10 - num2 * 10) / 10;
+
+  static product = (num1, num2) => num1 * num2;
+
+  static quotient = (num1, num2) => num1 / num2;
+
+}
+module.exports = { stringLength, reverseString, Calculator };
