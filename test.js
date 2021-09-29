@@ -1,4 +1,4 @@
-const { stringLength } = require('./functions/script.js');
+const { stringLength, reverseString } = require('./functions/script.js');
 
 describe('Testing Practice', () => {
   describe('Task 1: String length function', () => {
@@ -6,6 +6,12 @@ describe('Testing Practice', () => {
       expect(stringLength('hello')).toBe(5);
       expect(stringLength('hello')).toBeGreaterThanOrEqual(1);
       expect(stringLength('hello')).toBeLessThanOrEqual(10);
+    });
+  });
+
+  describe('Task 2: Reverse a string function', () => {
+    test('Should return the reverse of a string', () => {
+      expect(reverseString('hello')).toBe('olleh');
     });
   });
 });
