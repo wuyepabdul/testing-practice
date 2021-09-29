@@ -37,5 +37,10 @@ describe('Testing Practice', () => {
     });
   });
 
-
+  describe('Task 4: Capitalize First letter of string', () => {
+    test('Should return sum of numbers', () => {
+      expect(capitalizeFirstChar('when')).toEqual('When')
+      expect(capitalizeFirstChar('DESTRUCTURING')).toEqual('Destructuring')
+    });
+  });
 });
